@@ -1,13 +1,16 @@
 {
   "name": "tjx-frontend-javascript",
   "version": "1.0.0",
-  "description": "\"Front-end JavaScript resources for TJX's ECIP Cohort\"",
+  "description": "\"Front-end JavaScript resources for TJX's EICP Cohort\"",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "John Paxton <pax@speedingplanet.com>",
   "license": "ISC",
+  "repository": {
+    "url": "https://github.com/EICPCohort4/tjx-frontend-javascript/"
+  },
   "devDependencies": {
     "@babel/cli": "^7.15.7",
     "@babel/core": "^7.15.8",
