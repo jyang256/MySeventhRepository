@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Query Selector Demos</title>
+  <style>
+    #first-team {
+      background-color: blue;
+      color: red;
+    }
+
+    li {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Query Selector Demos</h1>
+  </header>
+  <section>
+    <ul>
+      <li id="first-team">Red Sox</li>
+      <li>Celtics</li>
+      <li>Bruins</li>
+      <li>Patriots</li>
+    </ul>
+  </section>
+  <script>
+    // let sox = document.getElementById('first-team');
+    let sox = document.querySelector('#first-team');
+    let whatIsThis = document.querySelector('li');
+    sox === whatIsThis; // true
+
+    // Returns a NodeList of matching elements
+    let listItems = document.querySelectorAll('li');
+
+    // As a named function
+    listItems.forEach(printListItem);
+
+    // Inline function definition
+    listItems.forEach(function (item) {
+      console.log(item.textContent);
+    });
+
+    // Inline arrow function (ES2015, not supported by IE11)
+    listItems.forEach((item) => console.log(item.textContent))
+
+    function printListItem(item) {
+      console.log(item.textContent);
+    }
+
+    for (let x = 0; x < listItems.length; x ++) {
+      let item = listItems[x];
+      // let item = listItems.item(x);
+      console.log(item.textContent);
+    }
+
+    for (let item of listItems) {
+      console.log(item.textContent);
+    }
+  </script>
+</body>
+
+</html>
