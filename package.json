@@ -21,6 +21,10 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.1",
     "http-server": "^14.0.0",
+    "json-server": "^0.17.0",
     "prettier": "^2.4.1"
+  },
+  "dependencies": {
+    "axios": "^0.24.0"
   }
 }
