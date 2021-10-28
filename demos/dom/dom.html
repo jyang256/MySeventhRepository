@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript and the DOM</title>
+    <style>
+      /* tag */
+      input { /* whatever */ }
+
+      /* class */
+      .foo {}
+
+      /* id */
+      #foo {}
+
+      /* attributes */
+      [foo] {}      /* is this attribute present? */
+      [foo=bar] {}  /* is this attribute set to this value? */
+      [foo^=bar] {} /* is this attribute set to a value that starts with 'bar'? */
+      [id^='name-'] {} /* id starts with 'name-' */
+      [class ^= 'foo'] {}/* class starts with 'foo' */
+      /* Does not match: <div class="bar foo"></div> */
+
+      /* Matches: <div class="bar foo"></div> */
+      /* Matches: <div class="bar foobaz"></div> */
+      /* Matches: <div class="bar bazfoobaz"></div> */
+      [class *= ' foo'] {}
+
+      /* combinations */
+      input[type=text] {
+        background-color: blue;
+      }
+
+      div.foo.bar {}
+
+      /* multiple selectors */
+      .foo,.bar {}
+
+      h1, h2, h3, h4, h5 {}
+
+      input[type=text], textarea, input[type=phone] {
+        border: 2px black solid;
+        background-color: red;
+      }
+
+      /* parent > child  */
+      div > ul > li.clicked {}
+      /* does not match <div><form><ul>...</ul></form></div> */
+
+
+      /* ancestor descendant */
+      div.foo p {}
+      div ul > li.clicked {}
+
+      /* pseudo-classes */
+      ul > li:first-child {}
+
+      /* Not yet supported */
+      div ul:has(li.clicked) {}
+
+
+      table tr:nth-child(odd)
+    </style>
+  </head>
+  <body>
+    <h1>JavaScript and the DOM</h1>
+  </body>
+</html>

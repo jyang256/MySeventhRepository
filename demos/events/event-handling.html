@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Handling</title>
+  <link rel="stylesheet" href="../../css/bootstrap.css">
+</head>
+
+<body>
+  <main class="container">
+    <header>
+      <h1>Event Handling</h1>
+    </header>
+    <div class="row">
+      <div class="col">
+        <button class="btn btn-primary btn-lg" id="target-button">Click me</button>
+      </div>
+      <div class="col">
+        <p id="output"></p>
+      </div>
+    </div>
+  </main>
+  <script>
+    let output = document.getElementById('output');
+
+    // Source of the event
+    let button = document.getElementById('target-button');
+
+    // Attach handler to source
+    button.addEventListener('click', clickHandler)
+
+    // Event handler
+    function clickHandler(event) {
+      output.textContent = `${Date.now()}: You clicked on the button`;
+    }
+  </script>
+</body>
+
+</html>
