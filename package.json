@@ -4,8 +4,8 @@
   "description": "\"Front-end JavaScript resources for TJX's EICP Cohort\"",
   "main": "index.js",
   "scripts": {
-    "server:root": "http-server -p 3000 --cors -c-1",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server:root": "http-server -p 3000 --cors"
   },
   "author": "John Paxton <pax@speedingplanet.com>",
   "license": "ISC",
@@ -23,10 +23,21 @@
     "eslint-plugin-promise": "^5.1.1",
     "http-server": "^13.0.0",
     "json-server": "^0.17.0",
+    "nodemon": "^2.0.14",
     "prettier": "^2.4.1"
   },
   "dependencies": {
     "axios": "^0.24.0",
-    "lodash-es": "^4.17.21"
+    "cookie-parser": "^1.4.5",
+    "debug": "^4.3.2",
+    "express": "^4.17.1",
+    "express-generator": "^4.16.1",
+    "http-errors": "^1.8.0",
+    "jade": "^1.11.0",
+    "lodash": "^4.17.21",
+    "lodash-es": "^4.17.21",
+    "lodash-id": "^0.14.1",
+    "lowdb": "^1.0.0",
+    "morgan": "^1.10.0"
   }
 }
