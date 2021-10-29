@@ -1,7 +1,7 @@
 //@ts-check
 import { movies } from '../../data/movies-module.js';
-import { LowSync } from '../../node_modules/lowdb/lib/LowSync.js';
-import { LocalStorage } from '../../node_modules/lowdb/lib/adapters/LocalStorage.js';
+import { LowSync } from './node_modules/lowdb/lib/LowSync.js';
+import { LocalStorage } from './node_modules/lowdb/lib/adapters/LocalStorage.js';
 import * as lodash from '../../node_modules/lodash-es/lodash.js';
 
 let adapter = new LocalStorage(movies);
