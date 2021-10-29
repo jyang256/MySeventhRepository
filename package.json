@@ -28,7 +28,16 @@
   },
   "dependencies": {
     "axios": "^0.24.0",
+    "cookie-parser": "^1.4.5",
+    "debug": "^4.3.2",
+    "express": "^4.17.1",
+    "express-generator": "^4.16.1",
+    "http-errors": "^1.8.0",
+    "jade": "^1.11.0",
+    "lodash": "^4.17.21",
     "lodash-es": "^4.17.21",
-    "lowdb": "^3.0.0"
+    "lodash-id": "^0.14.1",
+    "lowdb": "^1.0.0",
+    "morgan": "^1.10.0"
   }
 }
