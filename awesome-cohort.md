@@ -38,6 +38,9 @@ Awesome stuff for the cohort. Mostly useful links and any other resources we'd l
 - [REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)
 - [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) if your version of Git supports it
 - [Peacock](https://marketplace.visualstudio.com/items?itemName=johnpapa.vscode-peacock)
+- [Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer) native in VS Code as of 1.60
+- [Bracket Pair Colorizer 2](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2) supposedly faster parsing
+- [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph) visualizing git branches
 
 ## JavaScript Libraries, Tools, and Reference
 
@@ -51,13 +54,18 @@ Awesome stuff for the cohort. Mostly useful links and any other resources we'd l
 ### Miscellaneous Libraries
 
 - [json-server](https://github.com/typicode/json-server): Get a full fake REST API with zero coding in less than 30 seconds (seriously)
-- [Jest Documentation](https://jestjs.io/docs/getting-started)
+- [Jest Documentation](https://jestjs.io/docs/getting-started): Testing library
+- [Mocha Testing Library](https://mochajs.org/)
+- [Axios AJAX Library](https://mochajs.org/)
 - [Prettier](https://prettier.io/): Code formatter
 - [ESLint](https://eslint.org/): Linter ([what's a linter?](https://sourcelevel.io/blog/what-is-a-linter-and-why-your-team-should-use-it))
 
 ## Reference
 
+- [JavaScript Book](javascriptbook.com/code/)
+- [Mozilla Developer Network](https://developer.mozilla.org/): Overall web dev documentation
 - [MDN on JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [ECMAScript Proposals](https://github.com/tc39/proposals)
 - [John's JS Ratings Calculator](https://github.com/johnpaxton-tjx/JS-RatingsCalculator) (with suggested improvements!)
 
 ### Document Object Model (DOM API)
@@ -81,6 +89,10 @@ Awesome stuff for the cohort. Mostly useful links and any other resources we'd l
 - [Verbal Expressions](https://github.com/VerbalExpressions/JSVerbalExpressions): JavaScript library for writing RegExps in English
 
 ## CSS
+
+### Libraries
+- [Bootstrap](https://getbootstrap.com/docs) Version 4 also available
+- [Tachyons](https://tachyons.io/)
 
 ### Reference
 - [MDN on CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
@@ -122,7 +134,13 @@ Awesome stuff for the cohort. Mostly useful links and any other resources we'd l
 - [Awesome VS Code](https://github.com/viatsko/awesome-vscode)
 - [Visual Studio Code for Software Development](https://app.pluralsight.com/guides/visual-studio-code-for-software-development)
 - [Visual Studio Code for Node.js Development](https://app.pluralsight.com/guides/visual-studio-code-for-node.js-development)
+- [Scott Hanselmann on Editing](https://www.youtube.com/watch?v=gSMyLMZYjz8): More about editing in general
+- [Setting environment variables in VS Code](https://stackoverflow.com/questions/43983718/set-global-path-environment-variable-in-vs-code)
 
 ## Miscellaneous
 
 - [Humans in spaaaaaaaaceeee](http://open-notify.org/Open-Notify-API/People-In-Space/) :rocket:
+- [FIRA Code font](https://github.com/tonsky/FiraCode): With ligatures
+- [Programming Fonts](https://www.programmingfonts.org/)
+- [Colorblindness and palettes](https://davidmathlogic.com/colorblind)
+- [Emmet Cheat Sheet](https://docs.emmet.io/cheat-sheet/)
