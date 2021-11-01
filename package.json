@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server:root": "http-server -p 3000 --cors"
+    "server:root": "http-server -p 3000 --cors -c-1",
+    "server:json": "json-server --watch --port 8000 data/students.json"
   },
   "author": "John Paxton <pax@speedingplanet.com>",
   "license": "ISC",
