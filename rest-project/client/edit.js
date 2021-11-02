@@ -23,9 +23,6 @@ form.addEventListener('submit', (event) => {
   let student = JSON.stringify(Object.fromEntries(data));
 
   axios({
-    method: 'patch',
-    url: url + '/' + data.get('id'),
-    data: student,
     headers: { 'Content-Type': 'application/json' },
   }).then((response) => {
     let updatedStudent = response.data;
@@ -47,20 +44,6 @@ form.addEventListener('change', () => {
   messageBox.classList.remove('message-update');
 });
 
-function updateStudentDropDown() {
-  let optionOne = selectStudentDropDown.options[0];
-
-  axios.get(url).then((response) => {
-    let students = response.data;
-    let options = students.map((student) => {
-      let option = document.createElement('option');
-      option.textContent = student.firstName + ' ' + student.lastName;
-      option.value = student.id;
-      return option;
-    });
-    selectStudentDropDown.replaceChildren(optionOne, ...options);
-    selectStudentDropDown.hidden = false;
-  });
-}
+function updateStudentDropDown() {}
 
 updateStudentDropDown();
