@@ -29,6 +29,8 @@ Questions to answer:
 - What data types do Axios methods return? 
 - How do you access data fetched asynchronously?
 
+Alternate URL (read-only): https://my-json-server.typicode.com/johnpaxton-tjx/restful-students/students
+
 Make an Axios request to the right endpoint, using the right HTTP method, to retrieve the list of students.
 
 When Axios returns the list of students, pass that list to `generateRows()` so it can render said list of students.
@@ -46,6 +48,8 @@ Update the search view to allow searching for a student by last name. Display va
 - Add an ID to the table body so that you can target it in JavaScript.
 
 ### search.js
+
+Alternate URL (read-only): https://my-json-server.typicode.com/johnpaxton-tjx/restful-students/students
 
 Add an event handler to the "Search" button.  
 In the event handler:  
