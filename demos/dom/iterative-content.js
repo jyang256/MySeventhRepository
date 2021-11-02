@@ -9,9 +9,10 @@ function useCreateElement() {
   root.replaceChildren();
 
   const list = document.createElement('ul');
-  movies.map((movie) => {
+  movies.forEach((movie) => {
     const item = document.createElement('li');
     item.textContent = `${movie.title} (${movie.year})`;
+    // item.textContent = movie.title + ' (' + movie.year + ')';
     list.append(item);
   });
 
@@ -26,7 +27,7 @@ function useInsertAdjacentHTML() {
   root.replaceChildren();
 
   const list = document.createElement('ul');
-  movies.map((movie) => {
+  movies.forEach((movie) => {
     list.insertAdjacentHTML(
       'beforeEnd',
       `<li>${movie.title} (${movie.year})</li>`
@@ -43,7 +44,9 @@ function useInnerHTML() {
   const root = document.querySelector('#inner-html');
   root.replaceChildren();
   let html = '<ul>';
-  movies.map((movie) => (html += `<li>${movie.title} (${movie.year})</li>`));
+  movies.forEach(
+    (movie) => (html += `<li>${movie.title} (${movie.year})</li>`)
+  );
   html += '</ul>';
 
   // One repaint, may trigger document-wide repaint

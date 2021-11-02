@@ -56,7 +56,7 @@ Awesome stuff for the cohort. Mostly useful links and any other resources we'd l
 - [json-server](https://github.com/typicode/json-server): Get a full fake REST API with zero coding in less than 30 seconds (seriously)
 - [Jest Documentation](https://jestjs.io/docs/getting-started): Testing library
 - [Mocha Testing Library](https://mochajs.org/)
-- [Axios AJAX Library](https://mochajs.org/)
+- [Axios AJAX Library](https://axios-http.com/docs/api_intro)
 - [Prettier](https://prettier.io/): Code formatter
 - [ESLint](https://eslint.org/): Linter ([what's a linter?](https://sourcelevel.io/blog/what-is-a-linter-and-why-your-team-should-use-it))
 
@@ -67,12 +67,17 @@ Awesome stuff for the cohort. Mostly useful links and any other resources we'd l
 - [MDN on JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 - [ECMAScript Proposals](https://github.com/tc39/proposals)
 - [John's JS Ratings Calculator](https://github.com/johnpaxton-tjx/JS-RatingsCalculator) (with suggested improvements!)
+- [TodoMVC](https://todomvc.com/): Compare different view libraries and frameworks against vanilla JavaScript
 
 ### Document Object Model (DOM API)
 - [Document](https://developer.mozilla.org/en-US/docs/Web/API/Document)
 - [Node](https://developer.mozilla.org/en-US/docs/Web/API/Node)
 - [Element](https://developer.mozilla.org/en-US/docs/Web/API/Element)
 - [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement)
+- [FormData](https://developer.mozilla.org/en-US/docs/Web/API/FormData/FormData)
+  - [Convert FormData to object](https://stackoverflow.com/questions/41431322/how-to-convert-formdata-html5-object-to-json)
+- [HTMLFormElement.elements](https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/elements)
+- [classList API](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList): Manipulates CSS classes with JavaScript
 
 ### Fetch
 - [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
@@ -108,6 +113,7 @@ Awesome stuff for the cohort. Mostly useful links and any other resources we'd l
 
 - [What happens when](https://github.com/alex/what-happens-when): Trying to answer "What happens when..." for a variety of computer activites ("I press enter", "I search on Google", etc.)
 - [Periodic table of DevOps tools](https://digital.ai/periodic-table-of-devops-tools)
+- [Yellow fade technique](https://kamranahmed.info/blog/2016/01/30/yellow-fade-technique-in-css/)
 
 ### Tech stack
 
