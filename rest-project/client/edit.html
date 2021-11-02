@@ -6,7 +6,23 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../../css/bootstrap.css">
-  <title>Add a student</title>
+  <title>Edit a student</title>
+  <style>
+    @keyframes yellowfade {
+      from {
+        background: yellow;
+      }
+
+      to {
+        background: transparent;
+      }
+    }
+
+    .message-update {
+      animation-name: yellowfade;
+      animation-duration: 3s;
+    }
+  </style>
 </head>
 
 <body>
@@ -44,7 +60,15 @@
       <h1>Edit a Student</h1>
       <hr>
     </header>
-    <form>
+    <div class="row">
+      <div class="col">
+        <select class="form-select" id="select-student" hidden>
+          <option selected>Select a student to edit</option>
+        </select>
+        <hr>
+      </div>
+    </div>
+    <form id="edit-form">
       <div class="mb-3">
         <label for="first-name" class="form-label">First Name:</label>
         <input type="text" class="form-control" name="firstName" id="first-name">
@@ -54,23 +78,27 @@
         <input type="text" class="form-control" name="lastName" id="last-name">
       </div>
       <div class="mb-3">
-        <label for="region" class="form-label">Region:</label>
-        <select name="region" id="region" class="form-select">
-          <option value="">Choose a region</option>
+        <label for="location" class="form-label">Location:</label>
+        <select name="location" id="location" class="form-select">
+          <option value="" selected>Choose a location</option>
           <option value="Europe">Europe</option>
           <option value="Canada">Canada</option>
-          <option value="USA">USA</option>
+          <option value="US">US</option>
         </select>
       </div>
       <div class="row">
-        <div class="col">
-          <button type="submit" class="btn btn-success">Edit</button>
+        <div class="col-2">
+          <button type="submit" class="btn btn-success" id="edit-button">Edit</button>
           <button type="reset" class="btn btn-secondary">Reset</button>
+        </div>
+        <div class="col">
+          <div id="message-box" class="p-2" hidden></div>
         </div>
       </div>
     </form>
   </main>
 
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="edit.js" type="module"></script>
 </body>
-
 </html>

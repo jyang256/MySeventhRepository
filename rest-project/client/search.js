@@ -1,4 +1,4 @@
-import { data } from '../../data/students-module.js';
+let url = 'http://localhost:8000/students';
 
 function generateRows(students) {
   let rows = students.map((student) => {
