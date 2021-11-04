@@ -14,6 +14,7 @@ module.exports = function (db) {
         let keys = lodash.intersection(Object.keys(req.query, fields));
 
         // Probably a better, optimal way to do this
+        // Treats multiple fields as condition1 && condition2
         for (let key of keys) {
           movies = movies.filter((movie) => {
             let value = movie[key];
@@ -50,7 +51,10 @@ module.exports = function (db) {
       res.status(204).send();
     })
     .get((req, res) => {
-      const result = db.get('movies').find({ id: req.params.id }).value();
+      const result = db
+        .get('movies')
+        .find({ id: Number(req.params.id) })
+        .value();
       if (result) {
         res.send(result);
       } else {
