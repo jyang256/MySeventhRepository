@@ -29,6 +29,7 @@
   "dependencies": {
     "axios": "^0.24.0",
     "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
     "debug": "^4.3.2",
     "express": "^4.17.1",
     "express-generator": "^4.16.1",
