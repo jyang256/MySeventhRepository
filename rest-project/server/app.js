@@ -1,33 +1,41 @@
-var createError = require('http-errors');
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
-const low = require('lowdb');
+const createError = require('http-errors');
+const express = require('express');
+const path = require('path');
+const cookieParser = require('cookie-parser');
+const cors = require('cors');
+const logger = require('morgan');
+const lodash = require('lodash');
 const lodashId = require('lodash-id');
+const createBetterId = require('../../demos/express/restful-backend/better-id');
+const low = require('lowdb');
 const FileSync = require('lowdb/adapters/FileSync');
+const adapter = new FileSync('../../data/students.json');
 
-const adapter = new FileSync('db.json');
+// TODO: Part 2, import api-routes
+
+const port = 8001;
+
 const db = low(adapter);
 db._.mixin(lodashId);
-db.defaults({ products: [] });
+db._.mixin({ createId: createBetterId });
+db.defaults({ students: [] });
 
-var apiRouter = require('./routes/api')(db);
-var clientRouter = require('./routes/client');
 var app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
+app.use(cors());
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use(clientRouter);
-app.use('/api', apiRouter);
+// TODO: Part 2, use api-routes, with an appropriately versioned path
+
+// TODO: Part 1, add core routes
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
@@ -44,4 +52,6 @@ app.use(function (err, req, res, next) {
   res.status(err.status || 500).send();
 });
 
-module.exports = app;
+app.listen(port, () => {
+  console.log(`RESTful Students Server running on ${port}.`);
+});

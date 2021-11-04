@@ -33,7 +33,9 @@ Alternate URL (read-only): https://my-json-server.typicode.com/johnpaxton-tjx/re
 
 Make an Axios request to the right endpoint, using the right HTTP method, to retrieve the list of students.
 
-When Axios returns the list of students, pass that list to `generateRows()` so it can render said list of students.
+When Axios returns the list of students, pass that list to `generateRows()`. What does `generateRows` return?  
+Get a reference to the table body, which is the container for the students you will render.
+Use the return value of `generateRows` to render the students to the table body. 
 
 Navigate to the Browse screen and see if it still works.
 
